@@ -4,8 +4,6 @@ on:
   push:
     branches: [ main ]
 
-  workflow_dispatch:
-
 jobs:
   Run-commands:
     runs-on: ubuntu-latest
@@ -18,4 +16,4 @@ jobs:
           echo "My First workflow!"
 
       - name: Log Time of first step
-        run: echo "${{ steps.Script.outputs.time }}"
+        run: echo ${{ steps.Script.outputs.time }}
