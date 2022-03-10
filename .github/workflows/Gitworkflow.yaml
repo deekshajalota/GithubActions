@@ -18,4 +18,4 @@ jobs:
           echo "My First workflow!"
 
       - name: Log Time of first step
-        run: echo "${{ steps.Scripts.outputs.time }}"
+        run: echo "${{ steps.Script.outputs.time }}"
