@@ -1,0 +1,22 @@
+name: FirstWorkflow
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  Run-commands:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Run a script
+	  id: Script
+        run: |
+		pwd
+		echo "My First workflow!"
+
+      - name: Log Time of first step
+        run: echo "${{ steps.Scripts.outputs.time }}"
