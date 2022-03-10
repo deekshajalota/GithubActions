@@ -15,7 +15,7 @@ jobs:
       id: Script
       run: |
         pwd
-	echo "My First workflow!"
+        echo "My First workflow!"
 
       - name: Log Time of first step
         run: echo "${{ steps.Scripts.outputs.time }}"
