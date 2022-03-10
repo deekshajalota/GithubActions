@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run a script
-	id: Script
-        run: |
-		pwd
-		echo "My First workflow!"
+    - name: Run a script
+      id: Script
+      run: |
+        pwd
+	echo "My First workflow!"
 
       - name: Log Time of first step
         run: echo "${{ steps.Scripts.outputs.time }}"
